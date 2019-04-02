@@ -10,3 +10,10 @@ spring:
     config:
       uri: http://127.0.0.1:8700
       fail-fast: true
+---
+spring:
+  profiles: docker
+  cloud:
+    config:
+      uri: http://192.168.37.101:8700
+      fail-fast: true
